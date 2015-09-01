@@ -1,7 +1,8 @@
 # tree-app
 This is a Google App Engine web application to maintain a family tree which can be edited by anyone on the fly.
 
-Vist: <http://jayaraj-tree.appspot.com>
+Main page: <http://jayaraj-tree.appspot.com>
+Tree: <http://jayaraj-tree.appspot.com/tree/index.html>
 
 TODO(melvin):
 
