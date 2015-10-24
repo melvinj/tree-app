@@ -5,16 +5,20 @@ import process
 import os
 
 
+# function to create select button with all the names in the tree
 def makeSelect(name, values):
     SEL = '<select name="{0}">\n{1}</select>\n'
     OPT = '<option value="{0}">{0}</option>\n'
     return SEL.format(name, ''.join(OPT.format(v) for v in values))
 
+# call getList to get all the names
 people = process.getList("family.json")
 
-
+# create select button
 select = makeSelect("person_name", people)
 
+# form sytax
+# TODO(melvin): Consider replacing this with jinja templates
 MAIN_PAGE_HTML = """\
 <html>
 <body>

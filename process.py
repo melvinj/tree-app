@@ -1,6 +1,12 @@
 import json
 
+"""
+Script to hold all functionality required to process the json tree
 
+Supported APIs: getList
+
+TODO(melvin): Provide an API to modify the tree based on a request
+"""
 
 c = 0
 
@@ -19,7 +25,7 @@ def dfs(family, start, visited=None):
     return visited 
 
 
-#print family
+# returns a list of all names in the tree
 def getList(filename):
     Fjson = open(filename, 'r')
 
