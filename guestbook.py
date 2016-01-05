@@ -22,8 +22,9 @@ select = makeSelect("person_name", people)
 MAIN_PAGE_HTML = """\
 <html>
 <body>
+<h1> Welcome! Please select the required action </h1>
 <form action="/sign" method="post">
-<div>""" + select + """</div>
+<div>""" + select + """</div><br><br>
 <div>
 <select name="action">
 <option value="edit">Edit Name</option>
@@ -31,7 +32,8 @@ MAIN_PAGE_HTML = """\
 <option value="add_spouse">Add Spouse</option>
 </select>
 </div>
-<div><input type="submit" value="Choose person"></div>
+<br><br>
+<div><input type="submit" value="Choose person"></div><br>
 </form>
 </body>
 </html>
