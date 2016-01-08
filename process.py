@@ -54,7 +54,7 @@ def dfs3(family, start, name, visited=None):
         visited = []
     if start['name'] == name:
         print "Here "
-        modfifyObject(family, )
+        #modfifyObject(family, )
         return family
     visited.append(start['name'])
     if 'children' in start:
